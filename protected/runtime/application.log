@@ -1,0 +1,725 @@
+2014/11/04 05:17:46 [error] [exception.CDbException] SQLSTATE[HY000] [1044] Access denied for user 'sduporta_root'@'localhost' to database 'sduporta_database'
+2014/11/04 05:17:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:17:54 [error] [exception.CDbException] SQLSTATE[HY000] [1044] Access denied for user 'sduporta_root'@'localhost' to database 'sduporta_database'
+2014/11/04 05:17:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:18:06 [error] [exception.CDbException] SQLSTATE[HY000] [1044] Access denied for user 'sduporta_root'@'localhost' to database 'sduporta_database'
+2014/11/04 05:18:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:19:11 [error] [exception.CDbException] SQLSTATE[HY000] [2006] MySQL server has gone away
+2014/11/04 05:19:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:19:54 [error] [exception.CDbException] SQLSTATE[HY000] [2002] Connection refused
+2014/11/04 05:19:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:19:58 [error] [exception.CDbException] SQLSTATE[HY000] [2002] Connection refused
+2014/11/04 05:19:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(589): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbAuthManager->init()
+#6 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(185): CModule->getComponent('authManager')
+#7 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CWebApplication->getAuthManager()
+#8 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(346): CWebUser->checkAccess('Student')
+#9 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(CWebUser))
+#10 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(AnnouncementController), Object(CInlineAction), '2.73.115.100', 'GET')
+#11 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('announcement/in...')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=announcement/index
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:20:01 [error] [exception.CDbException] SQLSTATE[HY000] [2002] Connection refused
+2014/11/04 05:20:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(589): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbAuthManager->init()
+#6 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(185): CModule->getComponent('authManager')
+#7 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CWebApplication->getAuthManager()
+#8 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(346): CWebUser->checkAccess('Student')
+#9 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(CWebUser))
+#10 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(AnnouncementController), Object(CInlineAction), '2.73.115.100', 'GET')
+#11 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('announcement/in...')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=announcement/index
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=announcement/index
+---
+2014/11/04 05:20:16 [error] [exception.CDbException] SQLSTATE[HY000] [2002] Connection refused
+2014/11/04 05:20:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:22:12 [error] [exception.CDbException] SQLSTATE[HY000] [2002] Connection refused
+2014/11/04 05:22:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:23:13 [error] [exception.CDbException] SQLSTATE[HY000] [2002] Connection refused
+2014/11/04 05:23:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:23:25 [error] [exception.CDbException] SQLSTATE[HY000] [2002] Connection refused
+2014/11/04 05:23:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:24:35 [error] [exception.CDbException] SQLSTATE[HY000] [1044] Access denied for user 'sduporta_root'@'localhost' to database 'sduporta_database'
+2014/11/04 05:24:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(589): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbAuthManager->init()
+#6 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(185): CModule->getComponent('authManager')
+#7 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CWebApplication->getAuthManager()
+#8 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(346): CWebUser->checkAccess('Student')
+#9 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(CWebUser))
+#10 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(AnnouncementController), Object(CInlineAction), '2.73.115.100', 'GET')
+#11 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('announcement/in...')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=announcement/index
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:24:43 [error] [exception.CDbException] SQLSTATE[HY000] [1044] Access denied for user 'sduporta_root'@'localhost' to database 'sduporta_database'
+2014/11/04 05:24:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /home/sduporta/public_html/resources/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /home/sduporta/public_html/protected/components/UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 /home/sduporta/public_html/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#9 /home/sduporta/public_html/resources/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/sduporta/public_html/resources/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/sduporta/public_html/resources/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/sduporta/public_html/protected/controllers/SiteController.php(97): CModel->validate()
+#13 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/sduporta/public_html/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sduporta.vh04.nurhost.kz/index.php?r=site/login
+---
+2014/11/04 05:26:17 [error] [exception.CDbException] SQLSTATE[HY000] [1044] Access denied for user 'sduporta_root'@'localhost' to database 'sduporta_database'
+2014/11/04 05:26:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(589): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbAuthManager->init()
+#6 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(185): CModule->getComponent('authManager')
+#7 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CWebApplication->getAuthManager()
+#8 /home/sduporta/public_html/protected/views/users/index.php(17): CWebUser->checkAccess('CreateAnnouncem...')
+#9 /home/sduporta/public_html/resources/framework/web/CBaseController.php(126): require('/home/sduporta/...')
+#10 /home/sduporta/public_html/resources/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/sduporta/...', Array, true)
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(869): CBaseController->renderFile('/home/sduporta/...', Array, true)
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#13 /home/sduporta/public_html/protected/controllers/UsersController.php(181): CController->render('index', Array)
+#14 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#25 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /home/sduporta/public_html/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=users
+---
+2014/11/04 05:30:07 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'sduporta_root'@'localhost' (using password: YES)
+2014/11/04 05:30:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(589): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbAuthManager->init()
+#6 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(185): CModule->getComponent('authManager')
+#7 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CWebApplication->getAuthManager()
+#8 /home/sduporta/public_html/protected/views/users/index.php(17): CWebUser->checkAccess('CreateAnnouncem...')
+#9 /home/sduporta/public_html/resources/framework/web/CBaseController.php(126): require('/home/sduporta/...')
+#10 /home/sduporta/public_html/resources/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/sduporta/...', Array, true)
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(869): CBaseController->renderFile('/home/sduporta/...', Array, true)
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#13 /home/sduporta/public_html/protected/controllers/UsersController.php(181): CController->render('index', Array)
+#14 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#25 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /home/sduporta/public_html/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=users
+---
+2014/11/04 05:30:22 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2014/11/04 05:30:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(589): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbAuthManager->init()
+#6 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(185): CModule->getComponent('authManager')
+#7 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CWebApplication->getAuthManager()
+#8 /home/sduporta/public_html/protected/views/users/index.php(17): CWebUser->checkAccess('CreateAnnouncem...')
+#9 /home/sduporta/public_html/resources/framework/web/CBaseController.php(126): require('/home/sduporta/...')
+#10 /home/sduporta/public_html/resources/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/sduporta/...', Array, true)
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(869): CBaseController->renderFile('/home/sduporta/...', Array, true)
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#13 /home/sduporta/public_html/protected/controllers/UsersController.php(181): CController->render('index', Array)
+#14 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#25 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /home/sduporta/public_html/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=users
+---
+2014/11/04 05:30:43 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2014/11/04 05:30:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(589): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbAuthManager->init()
+#6 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(185): CModule->getComponent('authManager')
+#7 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CWebApplication->getAuthManager()
+#8 /home/sduporta/public_html/protected/views/users/index.php(17): CWebUser->checkAccess('CreateAnnouncem...')
+#9 /home/sduporta/public_html/resources/framework/web/CBaseController.php(126): require('/home/sduporta/...')
+#10 /home/sduporta/public_html/resources/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/sduporta/...', Array, true)
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(869): CBaseController->renderFile('/home/sduporta/...', Array, true)
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#13 /home/sduporta/public_html/protected/controllers/UsersController.php(181): CController->render('index', Array)
+#14 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#25 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /home/sduporta/public_html/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=users
+---
+2014/11/04 05:30:46 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2014/11/04 05:30:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/sduporta/public_html/resources/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/sduporta/public_html/resources/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(589): CModule->getComponent('db')
+#4 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 /home/sduporta/public_html/resources/framework/base/CModule.php(387): CDbAuthManager->init()
+#6 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(185): CModule->getComponent('authManager')
+#7 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CWebApplication->getAuthManager()
+#8 /home/sduporta/public_html/protected/views/users/index.php(17): CWebUser->checkAccess('CreateAnnouncem...')
+#9 /home/sduporta/public_html/resources/framework/web/CBaseController.php(126): require('/home/sduporta/...')
+#10 /home/sduporta/public_html/resources/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/sduporta/...', Array, true)
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(869): CBaseController->renderFile('/home/sduporta/...', Array, true)
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#13 /home/sduporta/public_html/protected/controllers/UsersController.php(181): CController->render('index', Array)
+#14 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#15 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#25 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /home/sduporta/public_html/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=users
+---
+2014/11/04 05:31:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+2014/11/04 05:31:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist' in /home/sduporta/public_html/resources/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CDbAuthManager->checkAccess('CreateAnnouncem...', NULL, Array)
+#4 /home/sduporta/public_html/protected/views/users/index.php(17): CWebUser->checkAccess('CreateAnnouncem...')
+#5 /home/sduporta/public_html/resources/framework/web/CBaseController.php(126): require('/home/sduporta/...')
+#6 /home/sduporta/public_html/resources/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/sduporta/...', Array, true)
+#7 /home/sduporta/public_html/resources/framework/web/CController.php(869): CBaseController->renderFile('/home/sduporta/...', Array, true)
+#8 /home/sduporta/public_html/resources/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /home/sduporta/public_html/protected/controllers/UsersController.php(181): CController->render('index', Array)
+#10 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#20 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#21 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /home/sduporta/public_html/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php?r=users
+---
+2014/11/04 05:35:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+2014/11/04 05:35:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist' in /home/sduporta/public_html/resources/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CDbAuthManager->checkAccess('CreateAnnouncem...', NULL, Array)
+#4 /home/sduporta/public_html/protected/views/users/index.php(17): CWebUser->checkAccess('CreateAnnouncem...')
+#5 /home/sduporta/public_html/resources/framework/web/CBaseController.php(126): require('/home/sduporta/...')
+#6 /home/sduporta/public_html/resources/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/sduporta/...', Array, true)
+#7 /home/sduporta/public_html/resources/framework/web/CController.php(869): CBaseController->renderFile('/home/sduporta/...', Array, true)
+#8 /home/sduporta/public_html/resources/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /home/sduporta/public_html/protected/controllers/UsersController.php(181): CController->render('index', Array)
+#10 /home/sduporta/public_html/resources/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#20 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#21 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /home/sduporta/public_html/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php?r=users
+---
+2014/11/04 05:36:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+2014/11/04 05:36:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist' in /home/sduporta/public_html/resources/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CDbAuthManager->checkAccess('Student', NULL, Array)
+#4 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(346): CWebUser->checkAccess('Student')
+#5 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(CWebUser))
+#6 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(AnnouncementController), Object(CInlineAction), '2.73.115.100', 'GET')
+#7 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#14 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('announcement')
+#15 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/sduporta/public_html/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=announcement
+---
+2014/11/04 05:36:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+2014/11/04 05:36:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist' in /home/sduporta/public_html/resources/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CDbAuthManager->checkAccess('Student', NULL, Array)
+#4 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(346): CWebUser->checkAccess('Student')
+#5 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(CWebUser))
+#6 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(AnnouncementController), Object(CInlineAction), '2.73.115.100', 'GET')
+#7 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('')
+#14 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('announcement')
+#15 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/sduporta/public_html/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=announcement
+---
+2014/11/04 05:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announcements".' in /home/sduporta/public_html/resources/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('announcements')
+#1 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/sduporta/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=announcements
+---
+2014/11/04 05:37:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+2014/11/04 05:37:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sduporta_database.AuthAssignment' doesn't exist' in /home/sduporta/public_html/resources/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/sduporta/public_html/resources/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 /home/sduporta/public_html/resources/framework/web/auth/CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 /home/sduporta/public_html/resources/framework/web/auth/CWebUser.php(815): CDbAuthManager->checkAccess('Student', NULL, Array)
+#4 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(346): CWebUser->checkAccess('Student')
+#5 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(CWebUser))
+#6 /home/sduporta/public_html/resources/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(AnnouncementController), Object(CInlineAction), '2.73.115.100', 'GET')
+#7 /home/sduporta/public_html/resources/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 /home/sduporta/public_html/resources/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /home/sduporta/public_html/resources/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/sduporta/public_html/resources/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/sduporta/public_html/resources/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/sduporta/public_html/resources/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(282): CController->run('create')
+#14 /home/sduporta/public_html/resources/framework/web/CWebApplication.php(141): CWebApplication->runController('announcement/cr...')
+#15 /home/sduporta/public_html/resources/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/sduporta/public_html/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=announcement/create
+---
+2014/11/04 14:25:46 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'sduporta_root'@'localhost' (using password: YES)
+2014/11/04 14:25:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in C:\xampp\htdocs\sduportal.com\resources\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\xampp\htdocs\sduportal.com\resources\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\sduportal.com\resources\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\sduportal.com\resources\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\sduportal.com\resources\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\sduportal.com\resources\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\sduportal.com\resources\framework\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\sduportal.com\resources\framework\db\ar\CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\sduportal.com\protected\components\UserIdentity.php(22): CActiveRecord->findByAttributes(Array)
+#8 C:\xampp\htdocs\sduportal.com\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 C:\xampp\htdocs\sduportal.com\resources\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 C:\xampp\htdocs\sduportal.com\resources\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 C:\xampp\htdocs\sduportal.com\resources\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 C:\xampp\htdocs\sduportal.com\protected\controllers\SiteController.php(96): CModel->validate()
+#13 C:\xampp\htdocs\sduportal.com\resources\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 C:\xampp\htdocs\sduportal.com\resources\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\sduportal.com\resources\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\sduportal.com\resources\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\sduportal.com\resources\framework\web\CWebApplication.php(282): CController->run('login')
+#18 C:\xampp\htdocs\sduportal.com\resources\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 C:\xampp\htdocs\sduportal.com\resources\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\sduportal.com\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/sduportal.com/index.php?r=site/login
+HTTP_REFERER=http://localhost/sduportal.com/index.php?r=site/login
+---
+2014/11/04 14:43:25 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'sduporta_root'@'localhost' (using password: YES)
+2014/11/04 14:43:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in C:\xampp\htdocs\sduportal.com\resources\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\xampp\htdocs\sduportal.com\resources\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\sduportal.com\resources\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\sduportal.com\resources\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\sduportal.com\resources\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\xampp\htdocs\sduportal.com\resources\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 C:\xampp\htdocs\sduportal.com\resources\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\xampp\htdocs\sduportal.com\resources\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\xampp\htdocs\sduportal.com\resources\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\sduportal.com\resources\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\sduportal.com\resources\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\sduportal.com\resources\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\sduportal.com\resources\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\sduportal.com\resources\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\sduportal.com\resources\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 C:\xampp\htdocs\sduportal.com\resources\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\sduportal.com\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sduportal.com/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/sduportal.com/index.php?r=gii/default/index
+---
